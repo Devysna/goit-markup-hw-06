@@ -206,7 +206,7 @@
                  </ul>
                  </address>
             </div>
-            <div class="footer-right">
+            <div class="footer-center">
                 <p class="text-invitation">приєднуйтесь</p>
                         
                 <ul class="invitation-button-list">
@@ -241,9 +241,21 @@
                             </svg>
                         </a>
                     </li>
-                 </ul>
-                 
+                 </ul>                 
             </div>
+            <div class="footer-right">
+                <p class="text-invitation">Підпишіться на розсилку</p>
+                <form class="subscription-form" autocomplete="off" name="subscription-form">
+                    <input type="email" class="subscription-form-input" name="user-email" id="subscription-form-input">
+                    <label for="subscription-form-input" class="subscription-form-label">E-mail</label>
+                    <button data-modal-open class="buttom-subscription" type="submit">
+                        <span class="buttom-subscription-text">Підписатися</span>
+                        <svg class="icon-subscription">
+                            <use href="./images/icons.svg#icon-subscription"></use>
+                        </svg>  
+                    </button>
+                </form>                
+             </div>      
         </div>
     </footer>
 </body>
