@@ -452,6 +452,12 @@ header {
     align-items: center;
     justify-content: center;
 }
+.close-btn:hover > .close-btn-icon,
+.close-btn:focus > .close-btn-icon {
+    fill: var(--accent-color);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .form {
     padding: 40px;
@@ -540,7 +546,8 @@ header {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     position: relative;
-    transform: translateY(18px);
+    transform: translateY(18px);   
+    
  }
 
  .form-input-coment::placeholder {
@@ -556,7 +563,8 @@ header {
 }
 
 .form-input:focus,
-.form-input-coment:focus {
+.form-input-coment:focus,
+.subscription-form-input:focus {
     border-color: var(--accent-color);
 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -584,7 +592,7 @@ header {
     margin-bottom: 30px;
     
     display: flex;    
-    position: relative;
+    position: relative;    
 }
 
 .form-input-checkbox {
@@ -604,6 +612,7 @@ header {
     align-items: center;
 
     transform: translateY(50%);
+    cursor: pointer;
 }
 
 .text-privacy-policy {
@@ -1064,7 +1073,7 @@ footer {
     margin-right: 12px;
     width: 358px;
     height: 50px;
-    padding: 15px 16px 15px 79px;
+    padding: 15px 16px 15px 16px;
         
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1095,6 +1104,10 @@ footer {
     position: absolute;
     top: 15px;
     left: 16px;    
+}
+
+.subscription-form-input:focus + .subscription-form-label {
+    display: none;
 }
 
 .icon-subscription {    
